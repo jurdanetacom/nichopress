@@ -65,7 +65,6 @@
 
 	<script>
 	  WebFont.load({
-
 	    google: {
 			<?php 
 			
