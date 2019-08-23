@@ -1,0 +1,20 @@
+{
+  "name": "nichopress",
+  "version": "1.0.0",
+  "description": "Tema de Wordpress para nichos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Miguel Urdaneta",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "tiny-slider": "^2.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}

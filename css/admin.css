@@ -1,0 +1,444 @@
+.wrapfacilius{
+	display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.adminsidebar {
+    width: 25%;
+    /*border: 1px solid #ccc;
+	background: #fcfcfc;;*/
+	margin-right: 3em;
+}
+.separador {
+	color: #444444;
+	font-size: 1.5em;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	padding: 1em 0 1em 1em;
+}
+.buttonsubmit {
+	background: #ff3300;
+	border: none;
+	padding: 1em 1.5em;
+	text-align: center;
+	color: white;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+.buttonsubmit:hover {
+	background: #000;
+}
+.guardarcambios {
+	text-align: center;
+	margin: 2em 0 1em 0;
+	float: none;
+}
+.content_options {
+	width:70%;
+
+}
+
+.option_input input {
+	border-radius: 0;
+}
+.input_section {
+	border:1px solid #ddd;
+	border-bottom:0;
+	background:#f9f9f9;
+	border-radius: 3px 3px 3px 3px;
+}
+.option_input label {
+	font-size:12px;
+	font-weight:700;
+	width:50%;
+	margin-bottom: 10px;
+	display:block;
+	float:none;
+}
+.option_input {
+	padding:30px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.option_input small {
+	display:block;
+	float:right;
+	width:48%;
+	color:#333333;
+}
+.option_input input[type="text"], .option_input select {
+	width:25%;
+	font-size:12px;
+	padding:8px 10px;
+	color:#333;
+	height: auto !important;
+	line-height:1em;
+	background:#f9f9f9;
+	outline: none;
+}
+.option_input input[type="number"]{
+	width:10%;
+	font-size:12px;
+	padding:8px 10px;
+	color:#333;
+	height: auto !important;
+	line-height:1em;
+	background:#f9f9f9;
+	outline: none;
+	text-align: center;
+}
+.option_input input:focus, .option_input textarea:focus {
+	background:#fff;
+}
+.option_input textarea {
+	width:49%;
+	height:120px;
+	font-size:12px;
+	padding:5px 10px;
+	box-sizing: border-box;
+	color:#333;
+	line-height:1.5em;
+	background:#f9f9f9;
+	outline: none;
+}
+.input_title h3 {
+	color: #464646;
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 0 0;
+	text-shadow: 0 1px 0 #FFFFFF; 
+
+}
+.input_title {
+	cursor:pointer;
+	border-bottom:1px solid #ddd;
+	margin: 0;
+	padding: 7px 10px;
+	background-color: #F1F1F1;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #ECECEC);
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1;
+	border-bottom-color: #DFDFDF;
+	box-shadow: 0 1px 0 #FFFFFF;
+}
+.input_title h3 img {
+	position: relative;
+	top: -2px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+span.submit {
+	display: block;
+	float: right;
+	margin: 4px 10px;
+	padding: 0;
+}
+.clearfix {
+	clear:both;
+}
+form > p.submit {
+	float: right;
+	padding: 0;
+	margin-right: 30px;
+}
+.options_wrap > ul li {
+	display: inline;
+	margin-right: 5px;
+}
+.content_options .message {
+	margin-top: 30px
+
+}
+.footer-credit {
+	margin-top: 40px;
+}
+.enlace{
+	text-align: center;
+	margin: 0;
+}
+.enlace a{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+	display: inline-block;
+}
+.ideas{
+	font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+.ideas .ad-idea{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 300px;
+	height: 250px;
+	margin: 10px 20px;
+	border: 1px solid #ccc;
+}
+.ideas .ad-idea h2{
+	font-weight: normal;
+	font-size: 2.2em;
+	line-height: 1.2;
+	margin: 10px 0;
+}
+.ideas .ad-idea a{
+	text-decoration: none;
+}
+.ideas .ad-idea p{
+	font-size: 1.2em;
+	margin: 1.4em 0;
+}
+.ideas .ad-idea p a.btn{
+	display: inline-block;
+	padding: 10px 50px;
+	background: #777;
+	color: #fff;
+	border-radius: 5px;
+}
+.ideas .ad-idea-info{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 300px;
+	height: 250px;
+	margin: 0 20px;
+}
+.ideas .ad-idea-info span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	border:1px solid #777;
+	margin: 0;
+}
+#facilius_metabox .inside{
+	margin:0;
+}
+#facilius_metabox table{
+	width:100%;
+}
+#facilius_metabox table td{
+	width:50%;	
+    height: 55px;
+    padding: 0 10px;
+	border-bottom:1px solid #e5e5e5;
+}
+#facilius_metabox table td input[type=text]{
+	width:100%;
+	padding:7px 15px;
+}
+
+a.facilius-boton-admin {
+    text-decoration: none;
+    background: #505050;
+    line-height: 0;
+    padding: 1.5em;
+    margin: 0.5em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3em;
+    border: 1px solid #000;
+    display: inline-block;
+}
+p.updated{
+	background: #fff;
+    border-left: 4px solid #059c0d;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 15px 2px;
+	font-size: 1.5em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+a.facilius-boton-raiola {
+    text-decoration: none;
+    background: #1f1e24;
+    text-align: center;
+    padding: 1.5em;
+    margin: 0.5em auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3em;
+    border: 1px solid #4b4c4d;
+    display: inline-block;
+}
+
+.hosting-raiola {
+    background: blue;
+    color: #fff;
+    background: url(https://raiolanetworks.es/wp-content/uploads/raiola-block-home.jpg);
+    background-size: cover;
+    padding: 2em;
+}
+.hosting-raiola h2{
+	color:#72d7ff;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+    font-weight: 800;
+}
+.hosting-raiola img{
+	width: 100%;
+}
+.raiola-cta {
+    text-align: center;
+}
+.hosting-raiola ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.facilius-soporte {
+	background: #fcfcfc;
+	text-align: center;
+	text-transform: uppercase;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    margin: 4em 0 2em 0;
+}	
+
+.guardarcambiosflotante {
+    position: fixed;
+    right: 10%;
+    bottom: 9%;
+}
+.guardarcambiosflotante .buttonsubmit{
+	border-radius: 3em;
+	text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
+.ui-widget-content { /*/*border: 1px solid #666666*/; background: #f1f1f1 ;*/ color: #6498A5; }
+.ui-widget-content a { color: #222222; }
+.ui-widget-header {background: #f1f1f1 ; color: #222222; font-weight: bold; }
+.ui-widget-header a { color: #222222; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { /*border: 1px solid #d3d3d3*/; background: #e6e6e6; font-weight: normal; color: #555555; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color:#ff3300; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { /*border: 1px solid #999999*/; background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121; outline:none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #212121; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #cccccc; border-bottom: none; background: #fcfcfc; font-weight: bold; color: #888888; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #666; text-decoration: none; }
+.ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1; background: #fbf9ee; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec; color: #cd0a0a; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+.ui-widget-overlay { background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+
+
+.ui-tabs { position: relative; /*padding: .2em;*/ zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+
+.ui-tabs .ui-tabs-nav { margin: 0; border-bottom: 1px solid #cccccc;}
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 0.5em 0 0; outline:none; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1.2em; text-decoration: none; box-shadow: none;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; font-size: 1.5em;} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+
+.ui-tabs .ui-tabs-panel { display: block; border:1px solid #cccccc; border-top:none; padding: 1em 2em; background: #fcfcfc; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+.ui-state-active:focus { outline:none; }
+
+
+
+@media screen and (max-width:1653px){
+	.ui-tabs .ui-tabs-nav li a {
+		font-size: 1em;
+		padding: .4em .3em;
+	}
+		
+
+}
