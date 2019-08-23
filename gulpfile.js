@@ -19,7 +19,7 @@ var gulp = require('gulp'),
 // Crear server con Browsersync
 gulp.task('server', function(){
     browser.init({
-        proxy: "http://d.co", 
+        proxy: "http://nichopress.local", 
          //injectar css
         injectChanges: true,
         //que servir
