@@ -609,22 +609,22 @@ function pagina_configuracion_facilius() {
 							echo '<li><a href="#tabs-'.$value['name'].'">';
 							switch($value['name']){
 								case 'SEO':
-								echo '🚀 SEO';
+								echo 'SEO';
 								break;
 								case 'Anuncios':
-								echo '🤑 Anuncios';
+								echo 'Anuncios';
 								break;
 								case 'Social':
-								echo '🤳 Social';
+								echo 'Social';
 								break;
 								case 'AMP':
-								echo '📱 AMP';
+								echo 'AMP';
 								break;
 								case 'Otros':
-								echo '🔧 Otros';
+								echo 'Otros';
 								break;
 								case 'Incrustor':
-								echo '⛓ Incrustor';
+								echo 'Incrustor';
 								break;
 								default:
 									echo $value['name'];
@@ -693,8 +693,9 @@ function pagina_configuracion_facilius() {
 					case 'textarea': ?>
 						<div class="option_input option_textarea">
 							<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
-							<textarea name="<?php echo $value['id']; ?>" rows="" cols=""><?php if ( get_option( $value['id'] ) != "") { echo stripslashes(get_option( $value['id']) ); } else { echo $value['std']; } ?></textarea>
 							<small><?php echo $value['desc']; ?></small>
+							<textarea name="<?php echo $value['id']; ?>" rows="" cols=""><?php if ( get_option( $value['id'] ) != "") { echo stripslashes(get_option( $value['id']) ); } else { echo $value['std']; } ?></textarea>
+							
 							<div class="clearfix"></div>
 						</div>
 					<?php break;

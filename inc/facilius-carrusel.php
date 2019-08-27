@@ -250,18 +250,18 @@ function facilius_mostrar_carrusel($carruselslug){
         if ( $facilius_cartas->have_posts() ) {
             while ( $facilius_cartas->have_posts() ) {
                 $facilius_cartas->the_post();
-
+                $idcarta = get_the_ID();
                 if(has_post_thumbnail(get_the_ID())){
 
                     $styles='style="background:radial-gradient(
                         rgba('.$color_primario.',0.5),  
                         rgba('.$color_primario.',0.5)
-                    ),url('.get_the_post_thumbnail_url(get_the_ID(),'thumbnail').');background-size: cover;"';
+                    ),url('.get_the_post_thumbnail_url($idcarta,'thumbnail').');background-size: cover;"';
                 }
                 else{
                     $styles=null;
                 }
-                $carrusel_output.= '<li> <a href="'.get_post_meta(get_the_ID(),'facilius_cartas_url',true).'" class="card facilius-carta" '.$styles.' ><span class="textointerior">';
+                $carrusel_output.= '<li> <a href="'.get_post_meta($idcarta,'facilius_cartas_url',true).'" class="card facilius-carta carta-'.$idcarta.' " '.$styles.' ><span class="textointerior">';
 
                 $carrusel_output.= get_the_title();
                 $carrusel_output.= '</span></a> </li>';

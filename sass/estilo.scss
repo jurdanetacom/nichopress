@@ -16,14 +16,31 @@ ADS
 ********************************************************** */
 $font-h: 'Open Sans', cursive;
 $font-body: 'Montserrat', sans-serif;
+$menu-font: 'Montserrat', sans-serif;
 
 /*
 >>>>>>>>>>>>>>>>>>>> BASE <<<<<<<<<<<<<<<<<<<<<
 */
 @import'foundation';
-@import'basics';
+
+.alignleft {
+  display: inline;
+  margin: 0em 1em 0em 0em;
+}
+.alignright{
+  display: inline;
+  
+  margin: 0em 0em 0em 1em;
+}
+.aligncenter{
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
 a{
-  @include transition('all 0.3s ease');
+  
   text-decoration: none;
  
   color: $primary-color;
@@ -51,16 +68,16 @@ a{
     height:100%;
   }
 }
-
 body {
   font-family:$font-body;
-  font-size: $body-font-size;
-  color: $body-font-color;
-  background: $background-color;
+  font-size: 18px;
+  color: #222222;
+  
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+  line-height: 1.6;
   //position:static;
   
 }
@@ -195,13 +212,13 @@ ul.facilius-carrusel{
   font-weight: 900;
   color: #fff;
   background: linear-gradient(
-    #ff3300bb,  
-    #ff3300bb
-  ), url('//192.168.104:3000/wp-content/uploads/2018/09/13-lavidafreelance-520x310.jpg');
+    rgba(0,0,0,0.8),  
+    rgba(0,0,0,0.8)
+  );
   background-size: cover;
-  //font-weight:400;
+
   &:hover{
-    background:#ff3300;
+    background:#000;
   }
   h3{
     font-weight: 400;
@@ -277,7 +294,7 @@ ul.facilius-carrusel{
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-  color: $label-text-color;
+  color: #ff3300;
   
 }
 .navigation li {    
@@ -947,7 +964,7 @@ p.attachment{
   .postrelacionados{
     width: 48%;
     max-width: 300px;
-    background:$background-color;
+    
     border-radius: 0.5em;
     margin-bottom: 1em;
     

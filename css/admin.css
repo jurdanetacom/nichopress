@@ -387,7 +387,7 @@ a.facilius-boton-raiola {
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
 .ui-widget-content { /*/*border: 1px solid #666666*/; background: #f1f1f1 ;*/ color: #6498A5; }
 .ui-widget-content a { color: #222222; }
-.ui-widget-header {background: #f1f1f1 ; color: #222222; font-weight: bold; }
+.ui-widget-header {background: #ff3300 ; color: #222222; font-weight: bold; }
 .ui-widget-header a { color: #222222; }
 
 /* Interaction states
@@ -441,4 +441,9 @@ a.facilius-boton-raiola {
 	}
 		
 
+}
+
+.ui-widget textarea{
+	border:1px solid black;
+	border-radius:5px;
 }
