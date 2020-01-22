@@ -1,0 +1,37 @@
+.alignleft {
+    display: inline;
+    margin: 0em 1em 0em 0em;
+  }
+  .alignright{
+    display: inline;
+    
+    margin: 0em 0em 0em 1em;
+  }
+  .aligncenter{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  @media (min-width: 750px) {
+ 
+    .alignfull {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        width: auto;
+        max-width: 1000%;
+    }
+ 
+    .alignwide {
+        margin-left: calc(25% - 25vw);
+        margin-right: calc(25% - 25vw);
+        width: auto;
+        max-width: 1000%;
+    }
+ 
+}
+
+.wp-caption {
+    width: 100% !important;
+  }

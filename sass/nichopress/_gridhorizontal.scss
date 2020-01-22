@@ -1,0 +1,129 @@
+.card.horizontal{  
+    margin-bottom:1em;
+    border-radius: 1em;
+    /*&:after{
+      content:'';
+      clear:both;
+      float:none;
+      width:100%;
+      display:inline-block;
+    }*/
+    .entry-image{
+      padding-left: 0px;
+  
+      a{
+        display: block;
+        padding-bottom:0px;
+        margin-bottom:0;
+        img{
+          height: auto;
+          width: 100%;
+          border-radius: 1em 0 0 1em;
+          vertical-align: bottom;
+          //margin-bottom: -19px;
+         // padding-right: 3em;
+        } 
+      }
+    }
+    .entry-title{    
+      padding-left: 0;
+      border:none;
+      margin: 0.1em auto;
+      a{
+        font-size: 1em;
+        line-height: 1;
+        margin-top: 5px;
+        display: inline-block;
+      }
+    }
+    section{
+      margin:0 !important;
+      font-size: 0.8em;
+      p{
+        text-align:justify;
+        margin:15px 0;
+        font-size:0.8px;
+      }
+      .read-more{
+        margin:0;
+        //float:right;
+      }
+      .categoriasenloop{
+        font-size: 0.8em;
+      }
+      .totalcomentarios{
+        padding: 0 0 0.3em 0;
+        display: none;
+      }
+    }
+    .boton{
+      font-size: 0.8em;
+    }
+  }
+  .horizontal .articulos{
+    margin: 0.5em 0.1em;
+  }
+
+  @media only screen and (orientation:portrait){
+    .horizontal article{
+      .entry-image{
+        //padding-left: .9375rem;
+        padding-right: 0;
+        display: block;
+        line-height: 0;
+      }
+    }
+    .navfooter{
+      ul{
+        li{
+          display: block
+        }
+      }
+    }
+  }
+
+
+/* SMARTPHONES DE 5 PULGADAS PARA ARRIBA*/
+@media screen and (min-width:330px){
+    .card.horizontal{  
+      .entry-title{    
+        padding-left: 0;
+        border:none;
+        margin: 0.1em auto;
+        a{
+          font-size: 1em;
+          line-height: 1;
+          margin-top: 5px;
+          display: inline-block;
+        }
+      }
+      section{
+        font-size: 0.95em;
+        .categoriasenloop{
+          font-size: 0.8em;
+        }
+        .totalcomentarios{
+          padding: 0.3em 0;
+        }
+      }
+      .boton{
+        font-size: 0.8em;
+      }
+    }
+  }
+  /* 5.5 para arriba */
+  @media screen and (min-width:400px){
+    .card.horizontal{  
+      .entry-title{    
+        padding-left: 0;
+        border:none;
+        margin: 0.1em auto;
+        a{
+          font-size: 1.1em;
+          line-height: 1;
+          margin-top: 5px;
+          display: inline-block;
+        }
+      }
+    }
+  }

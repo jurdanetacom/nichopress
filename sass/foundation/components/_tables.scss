@@ -70,7 +70,8 @@ $table-margin-bottom: rem-calc(20) !default;
     background: $table-caption-bg;
     color: $table-caption-font-color;
     font: {
-      size: $table-caption-font-size;
+      /* EDITAR AQUI EL TAMAÑO DE FUENTExxxx*/
+      //size: $table-caption-font-size;
       weight: $table-caption-font-weight;
     }
   }
@@ -82,7 +83,7 @@ $table-margin-bottom: rem-calc(20) !default;
       th,
       td {
         padding: $table-head-padding;
-        font-size: $table-head-font-size;
+        //font-size: $table-head-font-size;
         font-weight: $table-head-font-weight;
         color: $table-head-font-color;
       }
@@ -96,7 +97,7 @@ $table-margin-bottom: rem-calc(20) !default;
       th,
       td {
         padding: $table-foot-padding;
-        font-size: $table-foot-font-size;
+        //font-size: $table-foot-font-size;
         font-weight: $table-foot-font-weight;
         color: $table-foot-font-color;
       }
@@ -107,7 +108,7 @@ $table-margin-bottom: rem-calc(20) !default;
     th,
     td {
       padding: $table-row-padding;
-      font-size: $table-row-font-size;
+      //font-size: $table-row-font-size;
       color: $table-row-font-color;
       text-align: $default-float;
     }
