@@ -7,7 +7,7 @@
 
 				<nav class="navfooter">
 
-					<?php facilius_nav('footer-menu'); ?>
+					<?php facilius_nav_footer('footer-menu'); ?>
 
 				</nav>
 
@@ -75,7 +75,7 @@
 				echo "families: ["; foreach($cargarfuentes as $fuente){ echo  "'".str_replace('+',' ',$fuente)."',"; } echo "]";
 				//echo "families: ['".str_replace('+',' ',$cargarfuentes[0])."','".str_replace('+',' ',$cargarfuentes[1])."']";
 			}else{
-				echo "families: ['Baloo Bhai', 'Montserrat']";
+				echo "families: ['Poppins']";
 			}
 			 ?>
 	      

@@ -5,7 +5,7 @@
 
 
 <div class="row">
-	<div class="content <?php echo facilius_content_classes(); if($mostrar_sidebar){echo ' medium-4 ';} ?> columns "><?php 		
+	<div class="content <?php echo facilius_content_classes(); if($mostrar_sidebar){echo ' medium-4 ';} ?>"><?php 		
 		facilius_descripcion_inicio_antes(); ?>
 		<div class="articulos">	
 			<?php get_template_part('loop-'.$facilius_layout); ?>

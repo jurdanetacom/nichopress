@@ -93,6 +93,31 @@ function facilius_nav($location){
     );
 
 }
+function facilius_nav_footer($location){
+
+    wp_nav_menu(
+        array(
+
+            'theme_location'  => $location,
+            'menu'            => '',
+            'container'       => 'nav',
+            'container_class' => 'menu-header-container',
+            'container_id'    => '', 
+            'menu_class'      => 'menu',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth'           => 1,
+            'walker'          => ''
+        )
+    );
+
+}
 function facilius_analytics(){
   $propertyID = get_option('facilius_gaid'); 
   if ($propertyID != "") {
@@ -137,11 +162,11 @@ get_template_part('inc/functions/unique-functions',get_stylesheet());
 
 /*Funciones de Facilius*/
 function facilius_head(){
-    if ( get_option( 'site_favicon' ) ) : 
+    /*if ( get_option( 'site_favicon' ) ) : 
         echo '<link rel="icon" href="'.esc_url(get_option('site_favicon')).'" type="image/png" />';
     else: 
         echo '<link rel="icon" href="'.get_template_directory_uri().'/img/favicon.ico" type="image/png" />';
-    endif; 
+    endif; */
     $facilius_theme_color = get_option('primary_color') ? get_option('primary_color') : '#ff3300';
     echo '
     <meta name="theme-color" content="'.$facilius_theme_color.'">
@@ -828,7 +853,7 @@ function facilius_agregar_busqueda($items) {
 
         <input id="s" type="text" name="s" placeholder="Escribe para buscar" >
         
-        <input class="searchsubmit" type="submit" value="Ir">
+        <input class="searchsubmit" type="submit" value="Buscar">
         
 
     </form><label class="icon-search" for="buscador"></label>
