@@ -65,7 +65,7 @@ function facilius_links_carrusel() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'             => 'http://d.co/wp-content/themes/nichopress/img/favicon-16x16.png',
+		'menu_icon'             => get_template_directory_uri().'/wp-content/themes/nichopress/img/favicon-16x16.png',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => false,
 		'can_export'            => true,
@@ -245,23 +245,13 @@ function facilius_mostrar_carrusel($carruselslug){
 
     
 
-        $carrusel_output.= '<nav>
+        $carrusel_output.= '<nav class="facilius-carrusel-wrap">
         <ul class="facilius-carrusel facilius-slider-'.$carruselslug.'">';
         if ( $facilius_cartas->have_posts() ) {
             while ( $facilius_cartas->have_posts() ) {
                 $facilius_cartas->the_post();
                 $idcarta = get_the_ID();
-                if(has_post_thumbnail(get_the_ID())){
-
-                    $styles='style="background:radial-gradient(
-                        rgba('.$color_primario.',0.5),  
-                        rgba('.$color_primario.',0.5)
-                    ),url('.get_the_post_thumbnail_url($idcarta,'thumbnail').');background-size: cover;"';
-                }
-                else{
-                    $styles=null;
-                }
-                $carrusel_output.= '<li> <a href="'.get_post_meta($idcarta,'facilius_cartas_url',true).'" class="card facilius-carta carta-'.$idcarta.' " '.$styles.' ><span class="textointerior">';
+                $carrusel_output.= '<li> <a href="'.get_post_meta($idcarta,'facilius_cartas_url',true).'" class="facilius-carta carta-'.$idcarta.' " '.$styles.' ><span class="textointerior">';
 
                 $carrusel_output.= get_the_title();
                 $carrusel_output.= '</span></a> </li>';

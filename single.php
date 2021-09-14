@@ -22,19 +22,20 @@ $mostrar_sidebar = get_option('facilius_mostrar_sidebar');  ?>
 			<footer><?php
 				
 				facilius_ad_under_content();
-				facilius_compartir_post(); 
-				if(!get_option('facilius_ocultar_post_relacionados')){ ?>
-				<div id="related-posts">
-					<?php facilius_related_posts($post->ID); ?>	
-				</div>
-				<?php } ?>
+				facilius_compartir_post(); ?>
 			</footer>
 		</article>
 		<?php endwhile; endif; ?>	 
 		<?php facilius_show_comments(); ?>
 	</main>
-	<?php if($mostrar_sidebar){ get_sidebar('nichopress');  } ?>	
+	<?php if($mostrar_sidebar){ get_sidebar('nichopress');  }  ?>	
 </div>
+<?php
+	if(!get_option('facilius_ocultar_post_relacionados')){ ?>
+		<div id="related-posts">
+			<?php facilius_related_posts($post->ID); ?>	
+		</div>
+	<?php }
 
 
-<?php get_footer(); ?>
+ get_footer(); ?>
