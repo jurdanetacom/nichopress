@@ -612,7 +612,7 @@ function facilius_add_post_meta_boxes() {
     'facilius_metabox',
     esc_html__( 'Configuracion Facilius', 'facilius' ),
     'facilius_leer_mas_meta_box',
-    'post',         
+    array('post',' page'),         
     'normal', 
     'default'
   );
